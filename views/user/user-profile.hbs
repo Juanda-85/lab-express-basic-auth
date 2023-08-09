@@ -1,1 +1,6 @@
-<p>This is your profile page my friend!</p>
+
+{{#if userInSession}}
+<p>This is your profile {{userInSession.username}}</p>
+{{else}}
+<a href="/login">Please log in</a>
+{{/if}}
